@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="super-container">
+        <div class="left-container">
+            <h1>Grades values</h1>
+            <div class="grade-row">
+                <label for="A+">A+</label>
+                <input id="Aplus" name="A+" type="number" value="4.00"/>
+            </div>
+            <div class="grade-row">
+                <label for="A">A</label>
+                <input id="A" name="A" type="number" value="4.00"/>
+            </div>
+            <div class="grade-row">
+                <label for="A-">A-</label>
+                <input id="Aminus" name="A-" type="number" value="3.70"/>
+            </div>
+            <div class="grade-row">
+                <label for="B+">B+</label>
+                <input id="Bplus" name="B+" type="number" value="3.30"/>
+            </div>
+            <div class="grade-row">
+                <label for="B">B</label>
+                <input id="B" name="B" type="number" value="3.00"/>
+            </div>
+            <div class="grade-row">
+                <label for="B-">B-</label>
+                <input id="Bminus" name="B-" type="number" value="2.70"/>
+            </div>
+            <div class="grade-row">
+                <label for="C+">C+</label>
+                <input id="Cplus" name="C+" type="number" value="2.30"/>
+            </div>
+            <div class="grade-row">
+                <label for="C">C</label>
+                <input id="C" name="C" type="number" value="2.00"/>
+            </div>
+            <div class="grade-row">
+                <label for="C-">C-</label>
+                <input id="Cminus" name="C-" type="number" value="1.70"/>
+            </div>
+            <div class="grade-row">
+                <label for="D+">D+</label>
+                <input id="Dplus" name="D+" type="number" value="1.30"/>
+            </div>
+            <div class="grade-row">
+                <label for="D">D</label>
+                <input id="D" name="D" type="number" value="1.00"/>
+            </div>
+            <div class="grade-row">
+                <label for="F">F</label>
+                <input id="F" name="F" type="number" value="0.00"/>
+            </div>
+        </div>
+        <div class="right-container">
+            <h1>Calculation</h1>
+            <div class="starting">
+                <label for="courses">Enter number of courses:</label>
+                <input id="courses" type="number" name="courses" />
+                <div class="start-btn" onclick="start()">
+                    Start
+                </div>
+                <div class="start-btn red" onclick="reset()">
+                    Reset
+                </div>
+            </div>
+            <div class="inputs">
+               
+            </div>
+            <div class="calc-btn" onclick="calculate()">
+                calculate
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
